@@ -25,10 +25,10 @@ this.setState({
 以前刚接触react的时候，我一度认为每次 setState 都会造成一次 re-render ，其实并不是这样：
 ```
 componentDidMount() {
-this.setState((prevState, props) => ({count: this.state.count + 1})) // 1
-this.setState((prevState, props) => ({count: this.state.count + 1})) // 2
-this.setState((prevState, props) => ({count: this.state.count + 1})) // 3
-this.setState({name: "xiaohesong"}) // 4
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 1
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 2
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 3
+    this.setState({name: "xiaohesong"}) // 4
 }
 render() {
     console.log('render')
