@@ -7,7 +7,7 @@ react中的状态state通过 setState() 方法来改变促进页面的重新渲�
 ```
 // name is ''
 this.setState({
-	name: 'myName'
+     name: 'myName'
 })
 console.log('name is', this.state.name) // 输出 ？？？
 ```
@@ -16,25 +16,25 @@ console.log('name is', this.state.name) // 输出 ？？？
 
 ```
 this.setState({
-	name: 'myName'
+    name: 'myName'
 }, () => {
-	console.log(`name is ${this.state.name}`)
+    console.log(`name is ${this.state.name}`)
 })
 ```
 ### 2. setState多次，Re-render 一次
 以前刚接触react的时候，我一度认为每次 setState 都会造成一次 re-render ，其实并不是这样：
 ```
 componentDidMount() {
-	this.setState((prevState, props) => ({count: this.state.count + 1})) // 1
-	this.setState((prevState, props) => ({count: this.state.count + 1})) // 2
-	this.setState((prevState, props) => ({count: this.state.count + 1})) // 3
-	this.setState({name: "xiaohesong"}) // 4
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 1
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 2
+    this.setState((prevState, props) => ({count: this.state.count + 1})) // 3
+    this.setState({name: "xiaohesong"}) // 4
 }
 render() {
-	console.log('render')
-	return(
-		// ...
-	)
+    console.log('render')
+    return(
+	// ...
+    )
 }
 ```
 可以发现，这里打印出 ‘render’ 仅为两次，并不是 4+1 次，为什么？
