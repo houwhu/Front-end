@@ -19,7 +19,7 @@ function Example (){
   )
 }
 ```
-上面这段代码是基于上个 [state hook计数器的例子](http://www.baidu.com) 的例子，但是我们现在添加了新的功能，我么讲文档的标题设置为自定义消息，包含了点击次数。
+上面这段代码是基于上个 [state hook计数器的例子](https://github.com/houwhu/Front-end/blob/master/react/state_hook.md) 的例子，但是我们现在添加了新的功能，我么讲文档的标题设置为自定义消息，包含了点击次数。
 
 数据获取，设置订阅及先手动更改 `React` 组件中的 `DOM` 都是副作用的示例。无论你是否习惯与将这些操作成为“副作用”或者仅仅是“效果”，但之前你可能已经在组件中执行了这些操作。
 >  **提示：** 如果你熟悉`React`类组件生命周期方法，你就可以将`useEffect Hook`视为`componentDidMount`,`componentDidUpdate`和`componentWillUnmount`的组合。
