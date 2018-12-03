@@ -4,8 +4,8 @@
 #### 1、ES基础知识
 + [x] let 和 const 命令        
 + [x] [变量的解构赋值](http://es6.ruanyifeng.com/#docs/destructuring)          
-+ [ ] 字符串的扩展
-+ [ ] 正则的扩展              
++ [x] 字符串的扩展
++ [x] 正则的扩展              
 + [ ] 数值的扩展             
 + [ ] 函数的扩展
 + [ ] 数组的扩展               
